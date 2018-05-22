@@ -1,5 +1,7 @@
 package com.itheima.leon.qqdemo.presenter.impl;
 
+import android.util.Log;
+
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.exceptions.HyphenateException;
 import com.itheima.leon.qqdemo.app.Constant;
@@ -45,6 +47,7 @@ public class RegisterPresenterImpl implements RegisterPresenter {
     }
 
     private void registerBmob(final String userName, final String pwd) {
+        Log.i("Register Bmob ",userName);
         User user = new User(userName, pwd);
         user.signUp(new SaveListener<User>() {
             @Override

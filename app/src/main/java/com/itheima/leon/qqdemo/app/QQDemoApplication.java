@@ -60,9 +60,8 @@ public class QQDemoApplication extends Application {
         mYuluSound = mSoundPool.load(this, R.raw.yulu, 1);
     }
 
-    private void initBmob() {
-        Bmob.initialize(this, "df5a02bd4c7875549784ceb033407cc4");
-    }
+    private void initBmob() {Bmob.initialize(this, "4b5f279124002c629736141caa920439");}
+    //private void initBmob() {Bmob.initialize(this, "4df5a02bd4c7875549784ceb033407cc4");}
 
     private void initHuanXin() {
         EMOptions options = new EMOptions();
